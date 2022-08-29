@@ -1,0 +1,31 @@
+﻿Country (Id, Name)
+City (Id, Name, CountryId )
+Airport(Id, Name, CountryId )
+Airline (Id, Name, CountryId)
+Airplane (Id, Type (Boeing, AirBus), Number (777, 737),Speed,Capacity)
+Flight(Id,FromAirport,ToAirport,AirPlaneId,Date,TicketCount)
+Ticket(Id,FlightId,Seat,Bag,Price)
+Passenger(Id,PassportNumber,Name, SurName,Email,MobileNumber,PasswordHash,CreatedDate)
+User(Id,Name,SurName,Email, Email,MobileNumber,PasswordHash)
+
+We need a program(WebSite) to allow to know about Flights,available tickets and buy tickets;
+We need also backOffice(Admin tool), to add Flights and cancel it;
+We should have Country,City,Airoport,AirLine,AirPlane data in our program in start.
+
+Functionalities(WebSite):
+1.Login(with Email and Mobile),Register,VerifyEmail,VerifyMobile
+2.Edit my account
+3.View all available/finished Flights (By From City, By To City and so on)
+4.Be able to buy tickets
+5.Be able to view all my bought tickets;
+6.Cancel my bought ticket
+
+We should have User program
+Functionalities(BackOffice):
+1.Login
+2.View all available/finished Flights (with data of Passenger, info about tickets, for example bought/free ticket count)
+3.Be able to cancel ticket from Passenger with some description
+4.Be able to add Flights.
+5.Be able to cancel Flights.
+
+Use Patterns, Solid, Custom exception, Logging,
